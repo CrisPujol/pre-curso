@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Formulari</title>
+
+<script type="text/javascript" src="codigo.js"></script>
+
+
+</head>
+
+<body >
+
+<form id=formulari method="post" onsubmit="return rebre()" action="">
+    Name <input type="text" id="nom"> <br>
+    Last name <input type="text" id="cognom"> <br>
+    Age <input type="text" id="edat"> <br>
+    City <input type="text" id="ciutat"> <br>
+    Work <input type="text" id="job"> <br><br>
+
+
+    <input type="radio" value="cotxe" name="transport" id="transportCar"> Car <br>
+    <input type="radio" value="bici" name="transport" id="transportBike"> Bike <br>
+    <input type="radio" value="moto" name="transport" id="transportMoto"> Motocyrcle <br><br>
+
+    <textarea id="text">    </textarea> <br><br>
+
+
+    <button id="button"> Summit </button><br>
+    <button id="button_blau" onclick="colorBlau()"> Change color blue </button><br>
+    <button id="button_verd" onclick="colorVerd()"> Change color green </button><br><br>
+
+    <input type="text" disabled="" id="disabled-field">
+</form>
+
+
+<br><br><br><br>
+
+
+
+
+
+
+
+</body>
+</html>

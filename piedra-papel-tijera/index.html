@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>rock, paper or scissors</title>
+
+<script type="text/javascript">
+
+
+var name1= prompt("Name fist player");
+var name2= prompt("Name second player");
+
+var partida= false;
+var user = 0;
+var computer = 0;
+
+while(partida != true){
+      var userChoice = prompt(name1 + " do you choose rock, paper or scissors?");
+      var computerChoice = prompt(name2 + " do you choose rock, paper or scissors?");
+
+
+
+      console.log(name1 + " choose: " + userChoice);
+      console.log(name2 + " choose: " + computerChoice);
+
+      console.log(compare(userChoice,computerChoice));
+
+      console.log(name1 + " " + user);
+      console.log(name2 + " " + computer);
+      console.log("---------------------------------------");
+
+      if (user === 3){
+      console.log(name1 + " wins");
+      partida = true;
+      }
+
+      else  if (computer === 3){
+      console.log(name2 + " wins");
+      partida = true;
+      }
+
+}
+
+
+
+
+
+function compare(userChoice,computerChoice){
+
+if(userChoice==computerChoice){
+    return "Is a tie!";
+    }
+else if(userChoice=="rock"){
+    if(computerChoice=="scissors"){
+        user=user+1;
+        return "rock win";
+    }
+    else{
+       computer=computer+1;
+        return "paper win";
+                }
+    }
+
+else if(userChoice=="paper"){
+    if(computerChoice=="rock"){
+      user=user+1;
+        return "paper win";
+
+        }
+    else{
+      computer=computer+1;
+        return "scissors win";
+
+        }
+    }
+
+else if(userChoice=="scissors"){
+    if(computerChoice=="paper"){
+      user=user+1;
+        return "sciccors win";
+
+        }
+    else{
+        computer=computer+1;
+        return "rock win";
+
+        }
+    }
+
+}
+
+
+
+
+
+
+</script>
+</head>
+
+<body>
+
+</body>
+</html>
